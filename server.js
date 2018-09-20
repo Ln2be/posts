@@ -9,7 +9,7 @@ const app = express();
 
 app.use(bodyParser.json({limit: '50mb', extended: true}))
 
-app.use(express.static(path.join(__dirname, 'dist/demoNg')))
+app.use(express.static(path.join(__dirname, 'dist/postsNg')))
 
 app.get('/api/posts', posts)
 
